@@ -25,7 +25,7 @@ TO: {to}
 MESSAGE: {message}'''.format(to = recipient, message = message))
 
 #log message details
-with open('MessageRecord.txt', 'a') as record:
+with open('MessageLog.txt', 'a') as record:
     record.write('=' * 48 +
                  '\nTIMESTAMP:'.ljust(13) + #newline counts as a character
                  '{}\n'.format(time.strftime('%A, %d of %B %Y, %I:%M%p')) +
