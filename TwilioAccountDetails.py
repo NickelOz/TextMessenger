@@ -15,3 +15,5 @@ def number(name):
 
 def twilionumber():
     return '' #Phone Number of Sender (Twilio Number)
+def me():
+    return 'Nicholas'
