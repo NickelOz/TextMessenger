@@ -1,12 +1,12 @@
 #Code snippets from https://github.com/TwilioDevEd/api-snippets/blob/master/rest/messages/send-sms/send-sms.5.x.py
 
 #load twilio and python modules
-from twilio.rest import TwilioRestClient
+from twilio.rest import Client as TwilioRestClient
 import TwilioAccountDetails as myDetails
 import time
 import textwrap
 
-client = TwilioRestClient(account = myDetails.SID(), token = myDetails.TOKEN())
+client = TwilioRestClient(myDetails.SID(), myDetails.TOKEN())
 
 #get message
 print('Welcome to the Text Messenger!')
